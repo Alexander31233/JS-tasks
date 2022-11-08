@@ -6,12 +6,7 @@ const ul = document.querySelector('#ul');
 
 const newLi = (txt) =>{
     let li = document.createElement("li")
-    li.innerText = txt.text;
+    li.innerText = "Пункт";
     ul.append(li);
 }
-btn.addEventListener('click', () =>{
-    newLi({
-        text :"Пункт"
-    })
-
-});
+btn.addEventListener('click', newLi);
